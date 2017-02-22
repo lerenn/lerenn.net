@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-bootstrap-squares"]
+	path = themes/bootstrap-squares
+	url = https://github.com/Lerenn/hugo-theme-bootstrap-squares.git

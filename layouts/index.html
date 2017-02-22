@@ -1,0 +1,58 @@
+{{ partial "doctype.html" . }}
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" .}}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-8">
+          <h3 class="largeTitle">
+            # {{ .Site.Data.Translation.RecentPosts }}
+          </h3>
+          {{ range (.Paginate (where .Data.Pages "Section" "!=" ( urlize .Site.Data.Translation.About ) ) 3).Pages }}
+            {{ .Render "summary-index" }}
+          {{ end }}
+          <div class="panel panel-default">
+            <div class="panel-body" style="margin: 0 5px; text-align: center">
+              {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.URL }}" style="float: left">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+              {{ end }}
+              Page {{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}
+              {{ if .Paginator.HasNext }}
+                <a href="{{ .Paginator.Next.URL }}" style="float: right">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <h3 class="largeTitle">
+            # {{ .Site.Data.Translation.About }}
+          </h3>
+          <div class="panel panel-default">
+            <div class="panel-body portrait" style="margin: 0 5px; text-align: center">
+                <img class="img-circle" src="/img/profile.png" style="max-width: 150px; margin: 10px 0 20px 0" />
+                <p class="justified">
+                  {{ .Site.Params.Description }}
+                </p>
+            </div>
+          </div>
+          <h3 class="largeTitle">
+            # {{ .Site.Data.Translation.Links }}
+          </h3>
+          <div class="panel panel-default">
+            <div class="panel-body portrait" style="margin: 0 5px; padding-left: 30px;">
+              <li><a href="https://hub.docker.com/u/lerenn/" target="_BLANK">Docker</a></li>
+              <li><a href="http://github.com/lerenn" target="_BLANK">GitHub</a></li>
+              <li><a href="https://twitter.com/realLerenn" target="_BLANK">Twitter</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ partial "footer.html" .}}
+  </body>
+</html>

@@ -1,0 +1,7 @@
+##
+# This is the page of translations.
+# You can copy it to your data folder and modify it in your own language.
+##
+HomepageTitle = "News"
+ReadMore = "Read More"
+NotFoundText = "This is not the web page you are looking for."

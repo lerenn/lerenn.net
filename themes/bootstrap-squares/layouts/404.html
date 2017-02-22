@@ -1,0 +1,20 @@
+{{ partial "doctype.html" . }}
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" .}}
+    <div class="container" style="text-align:center">
+      <h1>
+        <span class="label label-danger">
+          404 not found
+        </span>
+      </h1>
+      <div class="well" style="margin-top: 30px">
+          <strong style="color: #D9534F">
+            {{ .Site.Data.Translation.NotFoundText }}
+          </strong>
+      </div>
+    </div>
+    {{ partial "footer.html" .}}
+  </body>
+</html>

@@ -1,0 +1,16 @@
+name = "Bootstrap-Squares"
+license = "MIT"
+licenselink = "https://github.com/Lerenn/hugo-theme-bootstrap-squares/blob/master/LICENSE"
+description = ""
+homepage = ""
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.13
+
+[author]
+  name = "Lerenn"
+  homepage = "http://en.lerenn.net/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ .Site.Params.faviconLink }}" type="image/x-icon"> 
+  {{ if isset .Site.Params "author" }}
+    <meta name="author" content="{{ .Site.Params.author }}">
+  {{ end}}
+  {{ if ne .Description "" }}
+    <meta name="description" content="{{ .Description }}">
+  {{ else if isset .Site.Params "description" }}
+    <meta name="description" content="{{ .Site.Params.description }}">
+  {{ end}}
+  <title>
+    {{ .Site.Title }}
+    {{ if not (eq .URL "/")}}
+      - {{ .Title }}
+    {{ end }}
+  </title>
+  {{ partial "css.html" .}}
+</head>

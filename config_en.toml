@@ -1,0 +1,13 @@
+baseurl = "/"
+title = "Lerenn - Personal website"
+theme = "bootstrap-squares"
+languageCode = "en-UK"
+contentdir = "content/en"
+dataDir = "data/en"
+publishdir = "public/en"
+
+[params]
+  description = "Blog of thoughts and tutorials by an enthusiast of programming,
+    administration and security. Enjoy !"
+  author = "Lerenn"
+  faviconLink = "/img/favicon.ico"

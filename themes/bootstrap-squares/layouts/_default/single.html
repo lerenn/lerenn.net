@@ -1,0 +1,32 @@
+{{ partial "doctype.html" . }}
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" .}}
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 style="margin-top: 5px;">
+                <strong>{{ .Title }}</strong>
+            </h3>
+            <div class="row panel-infos">
+              <div class="col-md-2">
+                <span class="glyphicon glyphicon-time"></span>
+                {{ .Date.Format "02/01/2006" }}
+              </div>
+              <div class="col-md-2">
+                <span class="glyphicon glyphicon-folder-open" style="margin-right:5px;"></span>
+                {{ delimit .Params.categories ", " }}
+              </div>
+              <div class="col-md-8">
+                <span class="glyphicon glyphicon-tag" style="margin-right:5px;"></span>
+                {{ delimit .Params.tags ", " }}
+              </div>
+            </div>
+        </div>
+        <div class="panel-body justified">{{ .Content }}</div>
+      </div>
+    </div>
+    {{ partial "footer.html" .}}
+  </body>
+</html>

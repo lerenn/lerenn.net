@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <strong>{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</strong>
+        </h3>
+      </div>
+      <div class="panel-body">
+        <div class="panel-date">{{ .Date.Format "02/01/2006" }} - {{ delimit .Params.categories ", " }}</div>
+        {{ .Summary }}
+        <a href="{{ .Permalink }}" title="{{ .Site.Data.Translation.ReadMore }}">
+          <div class="panel-zone-bouton">
+            <button class="btn btn-sm btn-default" type="button">
+              {{ .Site.Data.Translation.ReadMore }}
+            </button>
+          </div>
+        </a>
+        <!-- Lynx compatibility -->
+        <a href="{{ .Permalink }}" title="{{ .Site.Data.Translation.ReadMore }}" style="display:none">
+          (Link) {{ .Site.Data.Translation.ReadMore }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

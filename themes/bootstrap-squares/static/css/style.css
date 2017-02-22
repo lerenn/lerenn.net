@@ -1,0 +1,41 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #F1F1F1;
+  word-wrap: break-word;
+  margin-top: -15px;
+}
+
+/* Code */
+pre{
+  background-color: black;
+  border: 2px solid silver;
+}
+
+pre > code {
+  color: white;
+}
+
+code {
+  color: #AE6800;
+  background-color: #F9F8F2;
+}
+
+/* Selected text */
+::-moz-selection {
+    color: white;
+    background: #174D75;
+}
+
+::selection {
+    color: white;
+    background: #174D75;
+}
+
+a{
+  color: #174D75;
+}
+
+.justified{
+  text-align: justify;
+  text-justify: inter-word;
+}

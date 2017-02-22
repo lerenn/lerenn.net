@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container">
+    {{ if ne .Site.Data.Common.GitHub "" }}
+      <a href="{{ .Site.Data.Common.GitHub }}" target="_BLANK"><img src="/img/logos/github-white.png"/></a>
+    {{ end }}
+    {{ if ne .Site.Data.Common.LinkedIn "" }}
+      <a href="{{ .Site.Data.Common.LinkedIn }}" target="_BLANK"><img src="/img/logos/linkedin-white.png"/></a>
+    {{ end }}
+    {{ if ne .Site.Data.Common.Docker "" }}
+      <a href="{{ .Site.Data.Common.Docker }}" target="_BLANK"><img src="/img/logos/docker-white.png"/></a>
+    {{ end }}
+    {{ if ne .Site.Data.Common.Twitter "" }}
+      <a href="{{ .Site.Data.Common.Twitter }}" target="_BLANK"><img src="/img/logos/twitter-white.png"/></a>
+    {{ end }}
+    <p>
+      <i>{{ .Site.Data.Common.Copyright }}</i>
+    </p>
+  </div>
+</footer>
+
+{{ partial "javascript-inclusions.html" .}}

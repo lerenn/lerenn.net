@@ -1,0 +1,27 @@
+##
+# This is the page of menus.
+# You can copy it to your data folder and modify it.
+##
+[[topLeft]]
+  Name = "Home"
+  URL = "/"
+[[topLeft]]
+  Name = "About"
+  URL = "/about/"
+  [[topLeft.Children]]
+    Name = "Curriculum Vitae"
+    URL = "https://fr.wikipedia.org/wiki/Curriculum_vit%C3%A6"
+    NewTab = true
+[[topLeft]]
+  Name = "Source Code"
+  URL = "http://github.com"
+  NewTab = true
+
+[[topRight]]
+  Name = "Languages"
+  [[topRight.Children]]
+    Name = "French"
+    URL = "http://www.france.fr/"
+  [[topRight.Children]]
+    Name = "English"
+    URL = "http://www.royal.gov.uk/"

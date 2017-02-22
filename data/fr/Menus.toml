@@ -1,0 +1,23 @@
+##
+# This is the page of the main menu.
+# You can copy it to your data folder and modify it in your own language.
+##
+[[topLeft]]
+  Name = "Accueil"
+  URL = "/"
+[[topLeft]]
+  Name = "Code Source"
+  URL = "https://github.com/Lerenn"
+  NewTab = true
+[[topLeft]]
+Name = "Tutoriels"
+URL = "/tutoriels/"
+
+[[topRight]]
+  Name = "Languages"
+  [[topRight.Children]]
+    Name = "English"
+    URL = "https://en.lerenn.net/"
+  [[topRight.Children]]
+    Name = "Français"
+    URL = "https://fr.lerenn.net/"
