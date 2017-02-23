@@ -6,3 +6,5 @@ About = "About"
 RecentPosts = "Recent Posts"
 ReadMore = "Read More"
 Links = "Links"
+AboutText = """Blog of thoughts and tutorials by an enthusiast of programming,
+  administration and security."""

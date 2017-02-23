@@ -8,6 +8,6 @@ publishdir = "public/fr"
 
 [params]
   description = """Blog de réflexions et tutoriels par un passionné de programmation,
-    d'administration et de sécurité. Enjoy !"""
+    d'administration et de sécurité."""
   author = "Lerenn"
   faviconLink = "/img/favicon.ico"

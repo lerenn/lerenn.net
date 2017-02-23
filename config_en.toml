@@ -7,7 +7,7 @@ dataDir = "data/en"
 publishdir = "public/en"
 
 [params]
-  description = "Blog of thoughts and tutorials by an enthusiast of programming,
-    administration and security. Enjoy !"
+  description = """Blog of thoughts and tutorials by an enthusiast of programming,
+    administration and security."""
   author = "Lerenn"
   faviconLink = "/img/favicon.ico"

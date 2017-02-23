@@ -6,3 +6,5 @@ RecentPosts = "Articles récents"
 About = "A propos"
 ReadMore = "Lire plus"
 Links = "Liens"
+AboutText = """Blog de réflexions et tutoriels par un passionné de programmation,
+d'administration et de sécurité. Enjoy ! """
